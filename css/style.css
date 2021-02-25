@@ -47,7 +47,7 @@ body {
 }
 
 .about {
-height: 125vh;
+height: 30vh;
 }
 
 .horiz-line {
@@ -196,8 +196,8 @@ height: 125vh;
   font-weight: bold;  
   font-size: 16px;
   transition: .3s;
+  
 }
-
 .auth-link i {
   padding: 0 5px;
   font-size: 20px;
@@ -205,6 +205,38 @@ height: 125vh;
 }
 
 .auth-link:hover {
+  color: #e01533;
+}
+
+/*=====================02 часть==================*/
+.logotype1 {
+  position: absolute;
+  max-width: 60px;
+  margin-left: 105px;
+  width: 100%;
+  top: 1px;
+}
+
+.auth-link1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6f6f6f;
+  text-decoration: none;
+  font-weight: bold;  
+  font-size: 13.5px;
+  transition: .3s;
+  
+}
+.auth-link1 i {
+  padding: 0 5px;
+  font-size: 20px;
+  color: #e01533;
+}
+
+
+
+.auth-link1:hover {
   color: #e01533;
 }
 
@@ -700,3 +732,251 @@ height: 125vh;
 .description h4 {
   max-width: 600px;
 }
+
+/*===================================мобильная версия=========================*/
+@keyframes place {
+	0% {
+		margin-top: -5px;
+	}
+	50% {
+		margin-top: 5px;
+	}
+	100% {
+		margin-top: -5px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.photo-model {
+		max-width: 50%;
+	}
+	.photo-model img {
+		width: 100%;
+	}
+	.nav-menu {
+		display: none;
+	}
+	.personal-item {
+		display: none;
+	}
+	.logo {
+		width: 20%;
+	}
+	.search-block {
+		width: 60%;
+	}
+	.burger-link {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	body {
+		background: #fff;
+	}
+	.search-btn {
+		font-size: 15px;
+	}
+	.main-information {
+		flex-direction: column;
+	}
+	.photo-model {
+		max-width: 60%;
+	}
+	.text-inform h1 {
+		text-align: center;
+		font-size: 45px;
+	}
+	.tagline {
+		text-align: center;
+		font-size: 14px;
+	}
+	.inform-link {
+		width: 100%;
+		justify-content: center;
+	}
+	.inform-btn {
+		margin: 0 10px;
+		font-size: 14px;
+	}
+	.connect {
+		color: #fff;
+		font-size: 15px;
+	}
+	.social-link {
+		color: #fff;
+		font-size: 15px;
+	}
+	.social-link:hover {
+		color: #e01533
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.text-inform h1 {
+		font-size: 40px;
+	}
+	.search-form {
+		width: 80%;
+	}
+	.search-btn {
+		width: 20%;
+	}
+	,maps{
+		width: 95%;
+		height: 80%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.logotype {
+		max-width: 40px;
+	}
+	.search-form {
+		height: 20px;
+	}
+	.search-btn {
+		font-size: 12px;
+	}
+	.text-inform h1 {
+		font-size: 30px;
+	}
+	.inform-btn {
+		margin: 0 10px;
+		font-size: 12px;
+	}
+	.find a {
+		font-size: 12px;
+	}
+	.find i {
+		font-size: 14px;
+	}
+	.social-link {
+		padding-left: 0px;
+	}
+	.burger-link {
+		top: 2%;
+	}
+	.sign {
+		width: 300px;
+	}
+	
+}
+
+@media screen and (max-height: 650px) {
+	body {
+		height: 120vh;
+	}
+	.main-information {
+		top: 30%;
+	}
+	.social {
+		top: 110%;
+	}
+
+}
+
+@media screen and (max-height: 500px) and (max-width: 1000px) {
+	body {
+		height: 180vh;
+	}
+	.main-information {
+		top: 70%;
+	}
+	.social {
+		top: 180%;
+	}
+}
+/*=================================== FOOTER =====================*/
+footer {
+	background-color: #85192b;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 84%;
+	font-weight: 500;
+	margin-top: 100px;
+  height: 300px;
+}
+
+.links-ft {
+	font-size: 15px;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3vh;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.link-ft {
+	line-height: 30px;
+}
+
+.link-items {
+	max-width: 80px;
+	padding-top: 20px;
+}
+
+.title-ft, .link-items {
+	margin: 0 25px;
+}
+
+.title-ft {
+	font-weight: 300;
+}
+
+.adress-ft {
+	display: flex;
+	align-items: center;
+}
+
+.img-ft {
+	width: 30px;
+	height: 30px;
+  margin-left: 10px;
+}
+
+.title-ft {
+	font-size: 16px;
+	color: #fff;
+	font-weight: 400;
+	margin-left: 8px;
+}
+
+.about-ft {
+	margin-right: 50px;
+	margin-top: 3vh;
+}
+
+.number-ft {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.social-img {
+	margin-top: 30px;
+}
+.img-link {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: -400px;
+  right: 230px;
+  color: #fff;
+	font-size: 20px;
+	transition: .3s;
+	list-style: none;
+  margin-bottom: 10px;
+
+}
+
+
+
